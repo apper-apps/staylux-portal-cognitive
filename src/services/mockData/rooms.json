@@ -1,0 +1,114 @@
+[
+  {
+    "Id": 1,
+    "name": "Ocean View Suite",
+    "type": "Suite",
+    "price": 450,
+    "capacity": 4,
+    "amenities": ["Ocean View", "Private Balcony", "King Bed", "Sofa Bed", "Mini Bar", "Coffee Machine", "Free WiFi", "Air Conditioning"],
+    "images": [
+      "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=800&h=600&fit=crop"
+    ],
+    "status": "available"
+  },
+  {
+    "Id": 2,
+    "name": "Presidential Villa",
+    "type": "Presidential",
+    "price": 850,
+    "capacity": 6,
+    "amenities": ["Private Pool", "Butler Service", "Master Suite", "2 Guest Bedrooms", "Full Kitchen", "Private Garden", "Jacuzzi", "Wine Cellar"],
+    "images": [
+      "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop"
+    ],
+    "status": "available"
+  },
+  {
+    "Id": 3,
+    "name": "Garden Deluxe Room",
+    "type": "Deluxe",
+    "price": 280,
+    "capacity": 2,
+    "amenities": ["Garden View", "Queen Bed", "Marble Bathroom", "Work Desk", "Mini Fridge", "Tea/Coffee Facilities", "Free WiFi", "Daily Housekeeping"],
+    "images": [
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1595576508898-0ad5c879a061?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=800&h=600&fit=crop"
+    ],
+    "status": "occupied"
+  },
+  {
+    "Id": 4,
+    "name": "Mountain View Standard",
+    "type": "Standard",
+    "price": 180,
+    "capacity": 2,
+    "amenities": ["Mountain View", "Double Bed", "Private Bathroom", "Free WiFi", "Air Conditioning", "TV", "Room Service"],
+    "images": [
+      "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1540518614846-7eded433c457?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&h=600&fit=crop"
+    ],
+    "status": "available"
+  },
+  {
+    "Id": 5,
+    "name": "Penthouse Suite",
+    "type": "Suite",
+    "price": 720,
+    "capacity": 4,
+    "amenities": ["City View", "Private Terrace", "King Bed", "Living Room", "Dining Area", "Full Bar", "Premium Amenities", "Concierge Service"],
+    "images": [
+      "https://images.unsplash.com/photo-1591088398332-8a7791972843?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&h=600&fit=crop"
+    ],
+    "status": "maintenance"
+  },
+  {
+    "Id": 6,
+    "name": "Luxury Deluxe Twin",
+    "type": "Deluxe",
+    "price": 320,
+    "capacity": 3,
+    "amenities": ["Twin Beds", "Extra Bed Available", "Balcony", "Marble Bathroom", "Mini Bar", "Coffee Machine", "Free WiFi", "Spa Products"],
+    "images": [
+      "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1616047006789-b7af710a08de?w=800&h=600&fit=crop"
+    ],
+    "status": "available"
+  },
+  {
+    "Id": 7,
+    "name": "Comfort Standard Room",
+    "type": "Standard",
+    "price": 150,
+    "capacity": 2,
+    "amenities": ["City View", "Queen Bed", "Private Bathroom", "Free WiFi", "Air Conditioning", "TV", "Work Desk"],
+    "images": [
+      "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1631049035182-249067d7618e?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1595576508898-0ad5c879a061?w=800&h=600&fit=crop"
+    ],
+    "status": "available"
+  },
+  {
+    "Id": 8,
+    "name": "Family Suite",
+    "type": "Suite",
+    "price": 520,
+    "capacity": 6,
+    "amenities": ["Connecting Rooms", "2 Bedrooms", "Kids Area", "Kitchen", "Living Room", "2 Bathrooms", "Balcony", "Family Entertainment"],
+    "images": [
+      "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&h=600&fit=crop"
+    ],
+    "status": "occupied"
+  }
+]
