@@ -8,9 +8,10 @@ const PublicHeader = () => {
   const [isOpen, setIsOpen] = React.useState(false)
   const location = useLocation()
 
-  const navigation = [
+const navigation = [
     { name: "Home", path: "/" },
     { name: "Rooms", path: "/rooms" },
+    { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" }
   ]
 

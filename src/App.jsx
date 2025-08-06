@@ -7,21 +7,22 @@ import Rooms from "@/components/pages/Rooms"
 import RoomDetail from "@/components/pages/RoomDetail"
 import Booking from "@/components/pages/Booking"
 import Contact from "@/components/pages/Contact"
+import About from "@/components/pages/About"
 import AdminDashboard from "@/components/pages/AdminDashboard"
 import AdminRooms from "@/components/pages/AdminRooms"
 import AdminBookings from "@/components/pages/AdminBookings"
 import AdminReports from "@/components/pages/AdminReports"
-
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<PublicLayout />}>
+<Route path="/" element={<PublicLayout />}>
             <Route index element={<Homepage />} />
             <Route path="rooms" element={<Rooms />} />
             <Route path="rooms/:id" element={<RoomDetail />} />
             <Route path="booking" element={<Booking />} />
+            <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />
           </Route>
           <Route path="/admin" element={<AdminLayout />}>

@@ -54,10 +54,10 @@ const PublicFooter = () => {
           </div>
 
           {/* Quick Links */}
-          <div>
+<div>
             <h3 className="font-semibold mb-4">Quick Links</h3>
             <div className="space-y-2">
-              {["Home", "Rooms", "Contact", "Book Now"].map((item) => (
+              {["Home", "Rooms", "About", "Contact", "Book Now"].map((item) => (
                 <Link 
                   key={item}
                   to={item === "Book Now" ? "/booking" : `/${item.toLowerCase()}`}
