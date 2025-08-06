@@ -74,7 +74,42 @@ const navigation = [
             >
               Book Now
             </Link>
-<Link 
+            
+            {/* User Account Dropdown */}
+            <div className="relative group">
+              <Button variant="ghost" className="gap-2">
+                <ApperIcon name="User" className="w-4 h-4" />
+                Account
+              </Button>
+              <div className="absolute top-full right-0 mt-1 bg-white border border-gray-200 rounded-lg shadow-lg py-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-10 min-w-40">
+                <Link
+                  to="/login"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
+                >
+                  Sign In
+                </Link>
+                <Link
+                  to="/signup"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
+                >
+                  Sign Up
+                </Link>
+                <Link
+                  to="/profile"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
+                >
+                  My Profile
+                </Link>
+                <Link
+                  to="/my-bookings"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
+                >
+                  My Bookings
+                </Link>
+              </div>
+            </div>
+
+            <Link 
               to="/admin" 
               className="inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed text-primary hover:bg-primary/5 hover:text-primary hover:scale-[1.02] focus:ring-primary/20 px-4 py-2 text-sm gap-2"
             >
@@ -122,7 +157,25 @@ const navigation = [
               >
                 Book Now
               </Link>
-<Link 
+              
+              <div className="space-y-2">
+                <Link 
+                  to="/login"
+                  className="inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed text-primary hover:bg-primary/5 hover:text-primary hover:scale-[1.02] focus:ring-primary/20 px-4 py-2 text-sm w-full justify-center gap-2"
+                >
+                  <ApperIcon name="LogIn" className="w-4 h-4" />
+                  Sign In
+                </Link>
+                <Link 
+                  to="/signup"
+                  className="inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed text-primary hover:bg-primary/5 hover:text-primary hover:scale-[1.02] focus:ring-primary/20 px-4 py-2 text-sm w-full justify-center gap-2"
+                >
+                  <ApperIcon name="UserPlus" className="w-4 h-4" />
+                  Sign Up
+                </Link>
+              </div>
+
+              <Link 
                 to="/admin"
                 className="inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed text-primary hover:bg-primary/5 hover:text-primary hover:scale-[1.02] focus:ring-primary/20 px-4 py-2 text-sm w-full justify-center gap-2"
               >

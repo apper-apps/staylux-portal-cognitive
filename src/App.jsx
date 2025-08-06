@@ -8,6 +8,10 @@ import RoomDetail from "@/components/pages/RoomDetail"
 import Booking from "@/components/pages/Booking"
 import Contact from "@/components/pages/Contact"
 import About from "@/components/pages/About"
+import Login from "@/components/pages/Login"
+import Signup from "@/components/pages/Signup"
+import Profile from "@/components/pages/Profile"
+import UserBookings from "@/components/pages/UserBookings"
 import AdminDashboard from "@/components/pages/AdminDashboard"
 import AdminRooms from "@/components/pages/AdminRooms"
 import AdminBookings from "@/components/pages/AdminBookings"
@@ -24,6 +28,10 @@ function App() {
             <Route path="booking" element={<Booking />} />
             <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />
+            <Route path="login" element={<Login />} />
+            <Route path="signup" element={<Signup />} />
+            <Route path="profile" element={<Profile />} />
+            <Route path="my-bookings" element={<UserBookings />} />
           </Route>
           <Route path="/admin" element={<AdminLayout />}>
             <Route index element={<AdminDashboard />} />
