@@ -1,79 +1,80 @@
-import React from "react"
-import { motion } from "framer-motion"
-import { Link, useNavigate } from "react-router-dom"
-import { toast } from "react-toastify"
-import ApperIcon from "@/components/ApperIcon"
-import Button from "@/components/atoms/Button"
-import FormField from "@/components/molecules/FormField"
-import Card from "@/components/atoms/Card"
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import { Link, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
+import { Card } from "@/components/atoms/Card";
+import ApperIcon from "@/components/ApperIcon";
+import FormField from "@/components/molecules/FormField";
+import Homepage from "@/components/pages/Homepage";
+import Button from "@/components/atoms/Button";
 
-const Signup = () => {
-  const navigate = useNavigate()
-  const [loading, setLoading] = React.useState(false)
+function Signup() {
+  const navigate = useNavigate();
+  const [loading, setLoading] = React.useState(false);
   const [formData, setFormData] = React.useState({
     name: "",
     email: "",
     password: "",
     confirmPassword: "",
     phone: ""
-  })
+  });
 
   const handleInputChange = (field, value) => {
-    setFormData(prev => ({ ...prev, [field]: value }))
-  }
+    setFormData(prev => ({ ...prev, [field]: value }));
+  };
 
   const validateForm = () => {
     if (!formData.name.trim()) {
-      toast.error("Full name is required")
-      return false
+      toast.error("Full name is required");
+      return false;
     }
     if (!formData.email.trim()) {
-      toast.error("Email is required")
-      return false
+      toast.error("Email is required");
+      return false;
     }
     if (!formData.email.includes("@")) {
-      toast.error("Please enter a valid email")
-      return false
+      toast.error("Please enter a valid email");
+      return false;
     }
     if (!formData.password.trim()) {
-      toast.error("Password is required")
-      return false
+      toast.error("Password is required");
+      return false;
     }
     if (formData.password.length < 6) {
-      toast.error("Password must be at least 6 characters")
-      return false
+      toast.error("Password must be at least 6 characters");
+      return false;
     }
     if (formData.password !== formData.confirmPassword) {
-      toast.error("Passwords do not match")
-      return false
+      toast.error("Passwords do not match");
+      return false;
     }
-    return true
-  }
+    return true;
+  };
 
   const handleSubmit = async (e) => {
-    e.preventDefault()
-    if (!validateForm()) return
+    e.preventDefault();
+    if (!validateForm()) return;
 
-    setLoading(true)
+    setLoading(true);
     try {
       // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1500))
+      await new Promise(resolve => setTimeout(resolve, 1500));
       
       // Store user session (in real app, use proper auth)
       localStorage.setItem("user", JSON.stringify({
         name: formData.name,
         email: formData.email,
         phone: formData.phone
-      }))
+      }));
       
-      toast.success("Account created successfully! Welcome to StayLux.")
-      navigate("/")
+      toast.success("Account created successfully! Welcome to StayLux.");
+      navigate("/");
     } catch (err) {
-      toast.error("Signup failed. Please try again.")
+      toast.error("Signup failed. Please try again.");
     } finally {
-      setLoading(false)
+      setLoading(false);
     }
-  }
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-primary/5 to-secondary/5 flex items-center justify-center p-4">
@@ -183,7 +184,7 @@ const Signup = () => {
         </Card>
       </motion.div>
     </div>
-  )
+  );
 }
 
-export default Signup
+export default Signup;
