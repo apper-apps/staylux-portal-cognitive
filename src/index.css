@@ -19,13 +19,13 @@ body {
 }
 
 /* Toast customization */
+/* Toast customization */
 .Toastify__toast-container {
   @apply top-4 right-4 w-96 p-0 z-[9999];
 }
+
 .Toastify__toast {
-  @apply rounded-xl shadow-2xl p-4 min-h-14 font-sans text-sm;
-}
-.Toastify__toast--success {
+  @apply rounded-xl shadow-2xl p-4 min-h-[56px] font-sans text-sm;
   @apply bg-white border-l-4 border-success text-gray-800;
 }
 
