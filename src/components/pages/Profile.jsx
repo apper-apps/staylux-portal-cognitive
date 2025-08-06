@@ -5,7 +5,7 @@ import { toast } from "react-toastify"
 import ApperIcon from "@/components/ApperIcon"
 import Button from "@/components/atoms/Button"
 import FormField from "@/components/molecules/FormField"
-import Card from "@/components/atoms/Card"
+import { Card } from "@/components/atoms/Card"
 
 const Profile = () => {
   const navigate = useNavigate()
